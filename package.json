@@ -1,0 +1,32 @@
+{
+  "name": "onpoint-slide-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp styles",
+    "deploy": "gh-pages -d src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skyland891/onpoint-slide-task.git"
+  },
+  "author": "Ruslan Umarov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skyland891/onpoint-slide-task/issues"
+  },
+  "homepage": "https://github.com/skyland891/onpoint-slide-task#readme",
+  "dependencies": {
+    "autoprefixer": "^9.0.0",
+    "browser-sync": "^2.26.14",
+    "gulp-less": "^4.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sourcemaps": "^3.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.0.0"
+  }
+}

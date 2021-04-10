@@ -1,0 +1,64 @@
+.navigation {
+    position: absolute;
+    min-width: 768px;
+    min-height: 2048px;
+}
+
+.navigation__pagination {
+    position: fixed;
+    top: 492px;
+    right: 20px;
+}
+
+.navigation__pagination-item {
+    height: 18px;
+    width: 18px;
+    background-color: @pagination-color;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+.navigation__pagination-item--current {
+    background-color: @pagination-current-color;
+}
+
+.navigation__arrow {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 925px;
+    ///bottom: 68px;
+    //left: 315px;
+    background-image: url(" ../img/Ellipse\ 4.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    width: 768px;
+
+    height: 100px;
+}
+
+.navigation__arrow-text {
+    color: @arrow-text-color;
+    font-size: 24px;
+    position: relative;
+
+    &::after, &::before{
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 3px;
+        background-color: white;
+    }
+
+    &::after{
+        left: 52px;
+        top: 65px;
+        transform: rotate(45deg);
+    }
+
+    &::before{
+        left: 80px;
+        top: 64px;
+        transform: rotate(-45deg);
+    }
+}
