@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onpoint task</title>
+</head>
+<body> 
+    <nav class="navigation">
+        <ul class="navigation__pagination">
+            <li class="navigation__pagination-item navigation__pagination-item--current"></li>
+            <li class="navigation__pagination-item"></li>
+            <li class="navigation__pagination-item"></li>
+        </ul>
+        <div class="navigation__arrow">
+            <span class="navigation__arrow-text">Листайте вниз</span>
+        </div>
+    </nav>
+    <section class="main-question">
+        <div class="main-question__container">
+            <h1 class="main-question__question">Всегда ли цели терапии СД2 на поверхности?</h1>
+            <ul class="main-question__ellipses ellipses-list">
+                <li class="ellipses-list__ellipse"></li>
+                <li class="ellipses-list__ellipse"></li>
+                <li class="ellipses-list__ellipse"></li>
+                <li class="ellipses-list__ellipse"></li>
+            </ul>
+            <ul class="main-question__deseases deseases-list">
+                <li class="deseaes-list__item deseaes-list__item--hypoglycemia">Гипогликемия</li>
+                <li class="deseaes-list__item deseaes-list__item--heart">СС риски</li>
+                <li class="deseaes-list__item deseaes-list__item--hba1c">Цель по HbA1c</li>
+                <li class="deseaes-list__item deseaes-list__item--diabetes">Осложения СД</li>
+            </ul>
+        </div>
+    </section>
+    <section class="basis">
+        <div class="basis__container">
+            <h1 class="basis__title">Основа терапии - патогенез СД2</h1>
+        </div>
+    </section>
+    <section class="circuit">
+        <div class="circuit__container">
+            <div class="circuit__slider-wrapper">
+                <div class="circuit__slider-track">
+                    <section class="circuit__first-slide first-slide">
+                        <h1 class="first-slide__title">Звенья патогенеза СД2</h1>
+                        <ul class="first-slide__list">
+                            <li class="first-slide__list-item first-slide__list-item--betta">&#946</li>
+                            <li class="first-slide__list-item first-slide__list-item--muscle"><img src="./img/muscle.png" alt="muscle" width="80px" height="60px"></li>
+                            <li class="first-slide__list-item first-slide__list-item--liver"><img src="./img/liver.png" alt="liver" width="70px" height="70px"></li>
+                            <li class="slide-item-hyperglycemia first-slide__list-item--hyperglycemia">Гипергликемия</li>
+                        </ul>
+                    </section>
+                    <section class="circuit__second-slide">
+                        <h1 class="second-slide__title">Смертельный октет</h1>
+                        <ul class="second-slide__list">
+                            <li class="second-slide__list-item second-slide__list-item--betta"></li>
+                            <li class="second-slide__list-item second-slide__list-item--muscle"></li>
+                            <li class="second-slide__list-item second-slide__list-item--liver"></li>
+                            <li class="second-slide__list-item second-slide__list-item--incretin"></li>
+                            <li class="second-slide__list-item second-slide__list-item--alpha"></li>
+                            <li class="second-slide__list-item second-slide__list-item--tallow"></li>
+                            <li class="second-slide__list-item second-slide__list-item--brain"></li>
+                            <li class="second-slide__list-item second-slide__list-item--kidneys"></li>
+                            <li class="slide-item-hyperglycemia second-slide__list-item--hyperglycemia"></li>
+                        </ul>
+                    </section>
+                    <section class="circuit__third-slide">
+                        <h1 class="third-slide__title">Звенья патогенеза СД2</h1>
+                        <ul class="third-slide__list">
+                            <li class="third-slide__list-item third-slide__list-item--betta"></li>
+                            <li class="third-slide__list-item third-slide__list-item--muscle"></li>
+                            <li class="third-slide__list-item third-slide__list-item--liver"></li>
+                            <li class="third-slide__list-item third-slide__list-item--incretin"></li>
+                            <li class="third-slide__list-item third-slide__list-item--alpha"></li>
+                            <li class="third-slide__list-item third-slide__list-item--tallow"></li>
+                            <li class="third-slide__list-item third-slide__list-item--brain"></li>
+                            <li class="third-slide__list-item third-slide__list-item--kidneys"></li> 
+                            <li class="third-slide__list-item third-slide__list-item--intestines"></li>
+                            <li class="third-slide__list-item third-slide__list-item--immunity"></li>
+                            <li class="third-slide__list-item third-slide__list-item--stomach"></li>
+                            <li class="slide-item-hyperglycemia third-slide__list-item--hyperglycemia"></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <div class="circuit__input-container">
+                <input class="circuit__input" type="range" min="0" max="100" step="1" value="0">
+            </div>
+        </div>
+    </section>
+    <script type="module" src="./scrollAnimate.js"></script>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>

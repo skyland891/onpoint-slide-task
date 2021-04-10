@@ -1,0 +1,344 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow-y: hidden;
+  position: relative;
+  z-index: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  margin: 0;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+.navigation {
+  position: absolute;
+  min-width: 768px;
+  min-height: 2048px;
+}
+.navigation__pagination {
+  position: fixed;
+  top: 492px;
+  right: 20px;
+}
+.navigation__pagination-item {
+  height: 18px;
+  width: 18px;
+  background-color: white;
+  border-radius: 100%;
+  margin-bottom: 10px;
+}
+.navigation__pagination-item--current {
+  background-color: #f78b1f;
+}
+.navigation__arrow {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 925px;
+  background-image: url(" ../img/Ellipse\ 4.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  width: 768px;
+  height: 100px;
+}
+.navigation__arrow-text {
+  color: white;
+  font-size: 24px;
+  position: relative;
+}
+.navigation__arrow-text::after,
+.navigation__arrow-text::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background-color: white;
+}
+.navigation__arrow-text::after {
+  left: 52px;
+  top: 65px;
+  transform: rotate(45deg);
+}
+.navigation__arrow-text::before {
+  left: 80px;
+  top: 64px;
+  transform: rotate(-45deg);
+}
+.main-question {
+  min-height: 1024px;
+  background-image: url("../img/more\ copy.png");
+  background-repeat: no-repeat;
+  background-size: 768px 1024px;
+  background-position: center top;
+}
+.main-question__question {
+  max-width: 500px;
+  padding: 200px 0 0 10px;
+  font-size: 35px;
+  color: #0d319c;
+}
+.main-question__container {
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+}
+.deseaes-list__item {
+  position: absolute;
+  color: #0d319c;
+  font-size: 28px;
+}
+.deseaes-list__item--hypoglycemia {
+  top: 492px;
+  left: 125px;
+}
+.deseaes-list__item--heart {
+  top: 610px;
+  right: 82px;
+}
+.deseaes-list__item--hba1c {
+  left: 500px;
+  top: 370px;
+}
+.deseaes-list__item--diabetes {
+  top: 650px;
+  left: 205px;
+}
+.basis {
+  min-height: 1024px;
+  background-image: url("../img/basis-background.png");
+  background-repeat: no-repeat;
+  background-size: 768px 1024px;
+  background-position: center top;
+}
+.basis__container {
+  min-height: 1024px;
+  background-image: url("../img/ice-1.png"), url("../img/ice-2.png"), url("../img/ice-3.png"), url("../img/ice-4.png");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 40px, 100px, 150px 205px, 75px;
+  background-position: 52px 205px, 140px 600px, right 100px, 550px 810px;
+}
+.basis__title {
+  color: white;
+  font-size: 40px;
+  font-weight: 10;
+  font-style: normal;
+  max-width: 400px;
+  padding-top: 390px;
+  text-align: center;
+  letter-spacing: 2px;
+  margin: 0 auto;
+}
+.circuit {
+  position: relative;
+  z-index: -1;
+  min-height: 1024px;
+  background-image: url("../img/circuit-background.png");
+  background-repeat: no-repeat;
+  background-size: 768px 1024px;
+  background-position: center top;
+}
+.circuit__slider-wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.circuit__slider-track {
+  overflow: hidden;
+  transition: 0.2s;
+  height: 100%;
+  display: flex;
+}
+.circuit__first-slide {
+  min-width: 100vw;
+  height: 100vh;
+}
+.circuit__second-slide {
+  min-width: 100vw;
+  height: 100vh;
+}
+.circuit__third-slide {
+  min-width: 100vw;
+  height: 100vh;
+}
+.circuit__input-container {
+  position: absolute;
+  z-index: 2;
+  bottom: 75px;
+  left: 160px;
+}
+.circuit__input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 450px;
+  max-height: 17px;
+}
+.circuit__input:focus {
+  outline: none;
+}
+.circuit__input::-ms-track {
+  width: 580px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.circuit__input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  width: 70px;
+  height: 87px;
+  background-image: url("../../img/input-thumb.png");
+  background-repeat: no-repeat;
+  background-size: 70px 87px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.circuit__input::-moz-range-thumb {
+  width: 35px;
+  height: 6px;
+  background-image: url("../../img/input-thumb.png");
+  background-repeat: no-repeat;
+  background-size: 50px 67px;
+  cursor: pointer;
+}
+.circuit__input:-ms-thumb {
+  width: 35px;
+  height: 6px;
+  background-image: url("../../img/input-thumb.png");
+  background-repeat: no-repeat;
+  background-size: 50px 67px;
+  cursor: pointer;
+}
+.circuit__input:-webkit-slider-runnable-track {
+  height: 14px;
+  cursor: pointer;
+}
+.first-slide {
+  position: relative;
+  background-image: url("../img/arrow.svg"), url("../img/arrow-2.svg"), url("../img/arrow-3.svg"), url("../img/arrow-4.svg"), url("../img/ice-5.png"), url("../img/ice-6.png"), url("../img/ice-7.png");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: 220px 505px, 400px 505px, 220px 655px, 500px 655px, 0 800px, 500px 330px, 675px 120px;
+  background-size: 150px 110px, 150px 110px, 50px 10px, 50px 10px, 200px 180px, 100px 100px, 50px 50px;
+}
+.first-slide__title {
+  color: white;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 1.5;
+  padding: 150px 0 0 64px;
+  letter-spacing: 2.5px;
+}
+.first-slide__list-item {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #3e4279;
+  border-radius: 100%;
+}
+.first-slide__list-item--betta {
+  top: 400px;
+  left: 334px;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 10px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+.first-slide__list-item--betta::after {
+  position: relative;
+  content: '\3b2-клетки';
+  left: -5px;
+  top: -145px;
+  font-size: 30px;
+  display: inline-block;
+  min-width: 120px;
+}
+.first-slide__list-item--betta::before {
+  content: '1';
+  position: relative;
+  top: -115px;
+  left: 20px;
+  display: inline-block;
+  font-size: 42px;
+  color: white;
+}
+.first-slide__list-item--muscle {
+  top: 600px;
+  left: 117px;
+  box-sizing: border-box;
+}
+.first-slide__list-item--muscle::after {
+  position: relative;
+  content: 'Мышцы';
+  left: -10px;
+  top: -105px;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  min-width: 120px;
+}
+.first-slide__list-item--muscle::before {
+  content: '2';
+  position: relative;
+  top: -105px;
+  left: 35px;
+  display: inline-block;
+  font-size: 42px;
+  color: white;
+}
+.first-slide__list-item--muscle img {
+  position: absolute;
+  top: 21px;
+  right: 11px;
+}
+.first-slide__list-item--liver {
+  top: 600px;
+  right: 117px;
+}
+.first-slide__list-item--liver::after {
+  position: relative;
+  content: 'Печень';
+  left: 0;
+  top: -105px;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  min-width: 120px;
+}
+.first-slide__list-item--liver::before {
+  content: '3';
+  position: relative;
+  top: -105px;
+  left: 35px;
+  display: inline-block;
+  font-size: 42px;
+  color: white;
+}
+.first-slide__list-item--liver img {
+  position: absolute;
+  top: 21px;
+  right: 15px;
+}
+.first-slide__list-item--hyperglycemia {
+  color: white;
+  position: absolute;
+  top: 607px;
+  left: 272px;
+  font-size: 25px;
+  font-weight: 100;
+  font-style: normal;
+  border: 1px solid white;
+  padding: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

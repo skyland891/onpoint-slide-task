@@ -1,0 +1,131 @@
+.first-slide {
+    position: relative;
+    background-image: url("../img/arrow.svg"), url("../img/arrow-2.svg"), url("../img/arrow-3.svg"), url("../img/arrow-4.svg"), url("../img/ice-5.png"), url("../img/ice-6.png"), url("../img/ice-7.png");
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: 220px 505px, 400px 505px, 220px 655px, 500px 655px, 0 800px, 500px 330px, 675px 120px;
+    background-size: 150px 110px, 150px 110px, 50px 10px, 50px 10px, 200px 180px, 100px 100px, 50px 50px;
+}
+
+.first-slide__title {
+    color: @slide-title-color;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 1.5;
+    padding: 150px 0 0 64px;
+    letter-spacing: 2.5px;
+}
+
+.first-slide__list-item {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: @slide-item-color;
+    border-radius: 100%;
+    &--betta {
+        top: 400px;
+        left: 334px;
+        color: @slide-item-text-color;
+        font-size: 50px;
+        text-align: center;
+        padding-top: 10px;
+        padding-right: 20px;
+        box-sizing: border-box;
+
+        &::after {
+            position: relative;
+            content: '\3b2-клетки';
+            left: -5px;
+            top: -145px;
+            font-size: 30px;
+            display: inline-block;
+            min-width: 120px;
+        }
+
+        &::before {
+            content: '1';
+            position: relative;
+            top: -115px;
+            left: 20px;
+            display: inline-block;
+            font-size: 42px;
+            color: @slide-item-text-color;
+        }
+    }
+
+    &--muscle {
+        top: 600px;
+        left: 117px;
+        box-sizing: border-box;
+
+        &::after {
+            position: relative;
+            content: 'Мышцы';
+            left: -10px;
+            top: -105px;
+            font-size: 30px;
+            color: @slide-item-text-color;
+            display: inline-block;
+            min-width: 120px;
+        }
+
+        &::before {
+            content: '2';
+            position: relative;
+            top: -105px;
+            left: 35px;
+            display: inline-block;
+            font-size: 42px;
+            color: @slide-item-text-color;
+        }
+    }
+
+    &--muscle img {
+        position: absolute;
+        top: 21px;
+        right: 11px;
+    }
+
+    &--liver {
+        top: 600px;
+        right: 117px;
+
+        &::after {
+            position: relative;
+            content: 'Печень';
+            left: 0;
+            top: -105px;
+            font-size: 30px;
+            color: @slide-item-text-color;
+            display: inline-block;
+            min-width: 120px;
+        }
+
+        &::before {
+            content: '3';
+            position: relative;
+            top: -105px;
+            left: 35px;
+            display: inline-block;
+            font-size: 42px;
+            color: @slide-item-text-color;
+        }
+    }
+
+    &--liver img {
+        position: absolute;
+        top: 21px;
+        right: 15px;
+    }
+
+    &--hyperglycemia {
+        color: @hyperglycemia-color;
+        position: absolute;
+        top: 607px;
+        left: 272px;
+        font-size: 25px;
+        font-weight: 100;
+        font-style: normal;
+        border: 1px solid white;
+        padding: 30px;
+    }
+}

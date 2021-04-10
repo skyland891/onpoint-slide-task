@@ -1,0 +1,101 @@
+.circuit {
+    position: relative;
+    z-index:  -1;
+    min-height: 1024px;
+    background-image: url("../img/circuit-background.png");
+    background-repeat: no-repeat;
+    background-size: 768px 1024px;
+    background-position: center top;
+}
+
+.circuit__slider-wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.circuit__slider-track {
+    overflow: hidden;
+    transition: .2s;
+    height: 100%;
+    display: flex;
+}
+
+.circuit__first-slide {
+    min-width: 100vw;
+    height: 100vh;
+    //background-color: green;
+}
+
+.circuit__second-slide {
+    min-width: 100vw;
+    height: 100vh;
+}
+
+.circuit__third-slide {
+    min-width: 100vw;
+    height: 100vh;
+}
+
+.circuit__input-container {
+    position: absolute;
+    z-index: 2;
+    bottom: 75px;
+    left: 160px;
+}
+
+.circuit__input {
+  appearance: none; 
+  width: 450px;
+  max-height: 17px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::-ms-track {
+    width: 580px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+
+  &::-webkit-slider-thumb {
+    //position: relative;
+    //left: 10px;
+    appearance: none;
+    width: 70px;
+    height: 87px;
+    background-image: url("../../img/input-thumb.png");
+    background-repeat:  no-repeat;
+    background-size: 70px 87px;
+    cursor: pointer;
+    box-sizing: border-box;
+    }
+    &::-moz-range-thumb {
+    width: 35px;
+    height: 6px;
+    background-image: url("../../img/input-thumb.png");
+    background-repeat:  no-repeat;
+    background-size: 50px 67px;
+    cursor: pointer;
+    }
+      
+
+    &:-ms-thumb {
+    width: 35px;
+    height: 6px;
+    background-image: url("../../img/input-thumb.png");
+    background-repeat:  no-repeat;
+    background-size: 50px 67px;
+    cursor: pointer;
+    }
+      
+
+    &:-webkit-slider-runnable-track {
+    height: 14px;
+    cursor: pointer;
+    //background: white;
+    }
+}
